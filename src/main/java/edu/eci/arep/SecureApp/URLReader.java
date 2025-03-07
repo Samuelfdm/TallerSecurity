@@ -11,7 +11,7 @@ import javax.net.ssl.TrustManagerFactory;
 
 public class URLReader {
 
-    public static void main(String[] args) throws Exception {
+    public static void mainreader(String[] args) throws Exception {
 
         // Create a file and a password representation
         File trustStoreFile = new File("target/classes/truststore/myTrustStore");
@@ -33,7 +33,7 @@ public class URLReader {
         SSLContext.setDefault(sslContext);
 
         // We can now read this URL
-        readURL("https://localhost:5000/hello");
+        readURL("https://localhost:5000");
 
         // This one can't be read because the Java default truststore has been
         // changed.

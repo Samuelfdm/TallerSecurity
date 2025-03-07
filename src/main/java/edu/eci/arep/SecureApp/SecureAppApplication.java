@@ -9,7 +9,6 @@ public class SecureAppApplication {
 
 	public static void main(String[] args) {
 		SpringApplication app = new SpringApplication(SecureAppApplication.class);
-		//app.setDefaultProperties(Collections.singletonMap("server.port", getPort()));
 		app.setDefaultProperties(Collections.singletonMap("server.port", String.valueOf(getPort())));
 		app.run(args);
 	}
